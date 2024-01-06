@@ -1,0 +1,6 @@
+setup.py
+mypackage_sina/__init__.py
+mypackage_sina.egg-info/PKG-INFO
+mypackage_sina.egg-info/SOURCES.txt
+mypackage_sina.egg-info/dependency_links.txt
+mypackage_sina.egg-info/top_level.txt
