@@ -23,14 +23,14 @@ with read_file() as handle:
         temp = [*galaxy]
         for row in rows_set:
             if galaxy[0] > row:
-                temp[0] += 1
+                temp[0] += 999_999
         galaxy_arr[idx] = temp
 
     for idx, galaxy in enumerate(galaxy_arr):
         temp = [*galaxy]
         for col in cols_set:
             if galaxy[1] > col:
-                temp[1] += 1
+                temp[1] += 999_999
         galaxy_arr[idx] = temp
         
     print(sum(sum(cdist(galaxy_arr, galaxy_arr, 'cityblock'))) / 2)
