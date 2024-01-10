@@ -18,7 +18,6 @@ with read_file() as handle:
             
             if (pattern_np[:end] == generated[:end]).all():
                 horizontal_reflect = i
-                print("h")
 
         vertical_reflect = 0
         for j in range(1, len(pattern_np[0])):
@@ -29,7 +28,6 @@ with read_file() as handle:
 
             if (pattern_np[:, :end] == generated[:, :end]).all():
                 vertical_reflect = j
-                print("v")
 
         total += vertical_reflect + 100 * horizontal_reflect
 
